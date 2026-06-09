@@ -1,0 +1,31 @@
+.card {
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  color: white;
+  width: 200px;
+  border-radius: 10px;
+}
+
+.studied {
+  background: #ffaa50;
+}
+
+.toStudy {
+  background: #1e99ff;
+}
+
+.title {
+  font-size: 14px;
+}
+
+.count {
+  font-size: 24px;
+}
+
+.subtext {
+  font-size: 14px;
+}

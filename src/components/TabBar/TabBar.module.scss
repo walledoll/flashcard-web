@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-inline: 20px;
+  height: var(--tabBar-height);
+}

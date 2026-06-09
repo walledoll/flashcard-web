@@ -1,0 +1,13 @@
+.container {
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
