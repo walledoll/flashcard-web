@@ -1,0 +1,25 @@
+// Badge.module.scss
+.Badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.Badge_new {
+  background: #e3f2fd;
+  color: #1976d2;
+}
+
+.Badge_learning {
+  background: #ffebee;
+  color: #d32f2f;
+}
+
+.Badge_review {
+  background: #e8f5e9;
+  color: #2e7d32;
+}

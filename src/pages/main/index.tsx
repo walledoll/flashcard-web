@@ -1,5 +1,8 @@
 import styles from './Home.module.scss'
-import {Card} from "@components/Card";
+import {Card} from "@/widgets/Card";
+import {Deck} from "@/widgets/Deck/ui/Deck.tsx";
+import {Badge, BadgeType} from "@shared/ui/Badge";
+
 
 export const Home = () => {
     return (
@@ -10,7 +13,18 @@ export const Home = () => {
                 <Card subtext={''} count={134}/>
             </div>
             <h3>Your Decks</h3>
-            <div></div>
+            <div>
+                <Deck info={{
+                    newCards: 5,
+                    toLearnCards: 6,
+                    StudiedCards: 8
+                }}/>
+            </div>
+            <div>
+                <Badge count={9} type={BadgeType.NEW} />
+                <Badge count={2} type={BadgeType.LEARNING}/>
+                <Badge count={1} type={BadgeType.REVIEW} />
+            </div>
         </section>
     )
 }

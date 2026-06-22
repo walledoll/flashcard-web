@@ -1,5 +1,5 @@
 import {Outlet} from "react-router-dom";
-import {TabBar} from "@components/TabBar/TabBar.tsx";
+import {TabBar} from "@/widgets/TabBar/TabBar.tsx";
 import styles from './Layout.module.scss'
 
 export const Layout = () => {

@@ -11,3 +11,13 @@
   flex-direction: row;
   gap: 10px;
 }
+
+.Deck {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  &:before {
+    content: "";
+  }
+}
