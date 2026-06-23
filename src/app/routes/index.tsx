@@ -4,6 +4,7 @@ import {Home} from "@pages/main";
 import {NewPage} from "@pages/newPage";
 import {Settings} from "@pages/settings";
 import {NotFound} from "@pages/notfound";
+import {WelcomePage} from "@pages/welcome/ui/WelcomePage.tsx";
 
 export const router = createHashRouter([
     {
@@ -26,8 +27,14 @@ export const router = createHashRouter([
             {
                 path: '/settings',
                 element: <Settings/>
-            }
+            },
+
         ],
+
+    },
+    {
+        path: '/welcome',
+        element: <WelcomePage/>
     },
     {
         path: '*',

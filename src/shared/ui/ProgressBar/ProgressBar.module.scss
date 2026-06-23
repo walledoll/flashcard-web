@@ -1,0 +1,22 @@
+// ProgressBar.module.scss
+
+// Убедитесь, что есть эти классы
+.ProgressBar {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+  padding: 10px 0;
+  background: transparent; // временно
+}
+
+.Step {
+  flex: 1;
+  height: 10px;
+  background: #e0e0e0;  // временно !important
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.Filled {
+  background: #ff6b6b;   // временно !important
+}
