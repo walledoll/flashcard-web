@@ -1,7 +1,7 @@
 import styles from './Home.module.scss'
 import {Card} from "@/widgets/Card";
-import {Deck} from "@/widgets/Deck/ui/Deck.tsx";
 import {Badge, BadgeType} from "@shared/ui/Badge";
+import {Deck} from "@/widgets/Deck";
 
 
 export const Home = () => {

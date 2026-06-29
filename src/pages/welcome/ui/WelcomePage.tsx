@@ -1,9 +1,9 @@
 import cls from './WelcomePage.module.scss'
 import classNames from "classnames";
-import {ProgressBar} from "@shared/ui/ProgressBar/ProgressBar.tsx";
-import {Step} from "@shared/ui/Step/Step.tsx";
 import {useState} from "react";
 import { Button } from '@/shared/ui/Button';
+import {ProgressBar} from "@shared/ui/ProgressBar";
+import {Step} from "@shared/ui/Step";
 
 interface WelcomePageProps {
     className?: string,
@@ -40,6 +40,7 @@ export const WelcomePage = ({className}: WelcomePageProps) => {
         <div className={classNames(cls.WelcomePage, {}, [className])}>
             <ProgressBar current={current + 1} total={steps.length} />
             <Step
+                sticker={<div>hui</div>}
                 key={steps[current].id}
                 h1={steps[current].h1}
                 p={steps[current].p}
