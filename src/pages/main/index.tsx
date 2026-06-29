@@ -9,12 +9,13 @@ export const Home = () => {
         <section className={styles.container}>
             <h3>Overview</h3>
             <div className={styles.cardContainer}>
-                <Card isStudied subtext={''} count={134}/>
-                <Card subtext={''} count={134}/>
+                <Card isStudied subtext={'fsadfsdfsadf'} count={134}/>
+                <Card subtext={'dfdsfsfsfdasdf'} count={134}/>
             </div>
             <h3>Your Decks</h3>
             <div>
-                <Deck info={{
+                <Deck title={"Biology"}
+                    info={{
                     newCards: 5,
                     toLearnCards: 6,
                     StudiedCards: 8

@@ -9,15 +9,16 @@ interface IInfo {
 }
 
 interface IDeck {
-    info: IInfo
+    info: IInfo;
+    title: string;
 }
 
-export const Deck = ({info}: IDeck) => {
+export const Deck = ({title, info}: IDeck) => {
     const [collapsed, setCollapsed] = useState(false);
     return (
         <div>
             <div className={styles.Deck}>
-                <h3>Biology</h3>
+                <h3>{title}</h3>
                 <button onClick={() => setCollapsed(!collapsed)}>{collapsed ? <ChevronUp/> : <ChevronDown/>}</button>
             </div>
             <div>

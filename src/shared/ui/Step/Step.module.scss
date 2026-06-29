@@ -1,0 +1,16 @@
+.Step {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex: 1;
+  h1 {
+    color: var(--warm-white);
+    font-size: 36px;
+  }
+  p {
+    color: var(--grey);
+    font-size: 14px;
+  }
+}

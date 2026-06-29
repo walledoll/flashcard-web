@@ -1,22 +1,33 @@
-// ProgressBar.module.scss
-
-// Убедитесь, что есть эти классы
 .ProgressBar {
   display: flex;
   gap: 8px;
-  width: 100%;
   padding: 10px 0;
-  background: transparent; // временно
+  background: transparent;
+  align-items: center;
 }
 
 .Step {
-  flex: 1;
-  height: 10px;
-  background: #e0e0e0;  // временно !important
-  border-radius: 6px;
+  background: #e0e0e0;
   transition: all 0.3s ease;
+  &.Filled {
+    background: #ff6b6b;
+  }
+
+  &.current.dots {
+    transform: scale(1.4);
+    background: #ff6b6b;
+  }
+
+  &.rects {
+    flex: 1;
+    height: 5px;
+    border-radius: 6px;
+    width: 100%;
+  }
+  &.dots {
+    border-radius: 50%;
+    height: 12px;
+    width: 12px;
+  }
 }
 
-.Filled {
-  background: #ff6b6b;   // временно !important
-}
