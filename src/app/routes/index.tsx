@@ -1,6 +1,6 @@
 import {createHashRouter, Navigate} from "react-router-dom";
 import {Layout} from "@app/layout/Layout.tsx";
-import {Home} from "@pages/main";
+import {Home} from "@pages/home/ui/Home.tsx";
 import {NewPage} from "@pages/newPage";
 import {Settings} from "@pages/settings";
 import {NotFound} from "@pages/notfound";

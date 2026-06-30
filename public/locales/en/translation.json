@@ -1,0 +1,23 @@
+{
+  "pages": {
+    "home": {
+      "h3": "Overview"
+    },
+    "welcome": {
+      "step1": {
+        "h1": "Hear it. Write it. Learn it.",
+        "p": "Spotted a word you don't know? Write it down instantly and get a translation in seconds."
+      },
+      "step2": {
+        "h1": "Build Your Vocabulary",
+        "p": "Save words you discover and review them anytime to build your personal dictionary."
+      },
+      "step3": {
+        "h1": "Track Your Progress",
+        "p": "See how your vocabulary grows over time with personalized stats and insights."
+      },
+      "BtnNext": "Next",
+      "BtnHasAcc": "I already have an account"
+    }
+  }
+}

@@ -7,12 +7,13 @@
   background: var(--main-blue);
   position: relative;
   overflow: hidden;
+  z-index: 1;
   &:after {
     content: '';
     position: absolute;
     top: 23%;
     left: -12%;
-    z-index: -1;
+    z-index: 0;
     height: 300px;
     width: 300px;
     border-radius: 50%;
@@ -24,11 +25,16 @@
     position: absolute;
     top: -20%;
     left: 50%;
-    z-index: -1;
+    z-index: 0;
     height: 600px;
     width: 600px;
     border-radius: 50%;
     background: #063a6a;
+  }
+
+  > * {
+    position: relative;
+    z-index: 2;
   }
 }
 
@@ -36,6 +42,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 3;
 }
 
 .buttonsContainer {
@@ -45,4 +52,5 @@
   flex-direction: column;
   gap: 20px;
   width: 100%;
+  z-index: 3;
 }

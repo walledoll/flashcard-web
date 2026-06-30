@@ -1,4 +1,4 @@
-import styles from "@pages/main/Home.module.scss";
+import styles from "@pages/home/ui/Home.module.scss";
 import {ChevronDown, ChevronUp, Edit, Eye, List} from "lucide-react";
 import {useState} from "react";
 
