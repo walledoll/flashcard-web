@@ -6,6 +6,7 @@ import {ProgressBar} from "@shared/ui/ProgressBar";
 import {Step} from "@shared/ui/Step";
 import { useTranslation } from 'react-i18next';
 import {useNavigate} from "react-router-dom";
+import { Input } from '@/shared/ui/Input/ui/Input';
 
 interface WelcomePageProps {
     className?: string,
@@ -58,6 +59,7 @@ export const WelcomePage = ({className}: WelcomePageProps) => {
                 <Button variant='primary' onClick={handleNext}>{t('pages.welcome.BtnNext')}</Button>
                 <Button variant='outline'>{t('pages.welcome.BtnHasAcc')}</Button>
             </div>
+            <Input>hui</Input>
             <button onClick={() => changeLanguage('en')}>English</button>
             <button onClick={() => changeLanguage('ru')}>Русский</button>
         </div>
